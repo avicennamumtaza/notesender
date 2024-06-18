@@ -33,7 +33,13 @@ new class extends Component
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('notes.index')" :active="request()->routeIs('notes.index')" wire:navigate>
+                        {{ __('Notes') }}
+                    </x-nav-link>
                 </div>
+                {{-- <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                </div> --}}
             </div>
 
             <!-- Settings Dropdown -->
@@ -83,6 +89,11 @@ new class extends Component
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('notes.index')" :active="request()->routeIs('notes.index')" wire:navigate>
+                {{ __('Notes') }}
             </x-responsive-nav-link>
         </div>
 
