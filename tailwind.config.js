@@ -18,8 +18,8 @@ export default {
         extend: {
             colors: {
                 primary: colors.yellow,
-                secondary: colors.blue,
-                gray: colors.gray, 
+                blue: colors.blue,
+                secondary: colors.gray, 
                 positive: colors.emerald,
                 negative: colors.red,
                 warning: colors.amber,
